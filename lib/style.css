@@ -1,14 +1,28 @@
 html,body{margin:0;padding:0;height:100%}
 body{background-color:#2F81BA;background-image:radial-gradient(rgba(16,90,161,0.8),rgba(11,168,188,0.9))}
 body>.wrapper{margin:0 auto}
-#buttonarray{margin:25px auto;min-width:300px;max-width:600px;display:flex;flex-flow:wrap;justify-content:center}
+#buttonarray{margin:25px auto;min-width:300px;max-width:580px;gap:4px;display:flex;flex-flow:wrap;justify-content:space-between;align-items:stretch;}
 .buttonContainer{font-family:Georgia, "Times New Roman", Times, serif;color:#FFFFFF;text-align:center;padding-top:10px;padding-left:10px;padding-right:10px;height:140px;margin:10px;flex:0 1 100px}
-.buttonContainer a{color:#FFFFFF;text-decoration:none}
+.buttonContainer a{color:#FFFFFF;text-decoration:none;white-space:nowrap;}
 #about{margin:20px auto;padding:10px;width:320px;text-align:left;border:3px groove #F70;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;background-color:#e8fee6}
-.icon{background-repeat:no-repeat;vertical-align:central;height:100px;width:100px;text-align:center;margin:auto;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px}
+.icon{background-repeat:no-repeat;vertical-align:middle;height:100px;width:100px;text-align:center;margin:auto;margin-block-end:0.25rem;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px}
 .icon img{height:100px;width:100px}
-#libb { color: #036699; }
-#github-logo{background-image:url(./GitHub-Mark-Light-120px-plus.png);background-size:contain;border:3px solid transparent;box-sizing:border-box}
+
+#hsl-cc-icon {
+    --detail-view-background: #e2e2e2;
+    --diff-hue: 0deg;
+    --diff-hue-color: #b0b0b0;
+    --mask-circle-gradient: radial-gradient(
+        110px circle,
+        transparent 40px,
+        #8c8c8c 110px,
+        var(--detail-view-background) 110px
+    );
+    
+    background-image: radial-gradient( circle, transparent 40%, var(--diff-hue-color) 41%, var(--diff-hue-color) 93%, transparent 100%), var(--mask-circle-gradient), linear-gradient(var(--diff-hue), transparent 48.5%, red 49%,red 51%, transparent 51.5%), linear-gradient( calc(var(--diff-hue) + 90deg), transparent 48.5%, limegreen 49%, limegreen 51%, transparent 51.5% );
+    color: #036699;
+}
+#github-logo{background-image:url(./GitHub-Mark-Light-120px-plus.png);background-size:contain;border-inline:3px solid transparent;box-sizing:border-box}
 .logo{width:95px;height:95px}
 .outer-ring{fill:white}
 .inner-box{fill:white}
