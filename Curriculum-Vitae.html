@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Career journey of a Senior Frontend Engineer with 20+ years experience in UX, accessibility, and team leadership">
+    <meta name="keywords" content="frontend engineer, UX developer, accessibility, React, TypeScript, team leadership">
+    <meta name="author" content="Lorin (Twintails) Francell">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Career Journey - Senior UX Developer & Frontend Software Engineer">
+    <meta property="og:description"
+        content="Senior Frontend Engineer with 20+ years experience in UX, accessibility, and team leadership">
+    <meta property="og:url" content="https://twintails.github.io/Curriculum-Vitae.html">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Career Journey - Senior UX Developer & Frontend Software Engineer">
+    <meta name="twitter:description"
+        content="Senior Frontend Engineer with 20+ years experience in UX, accessibility, and team leadership">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="lib/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="lib/favicon.ico">
+
+    <title>Career Journey - Senior UX Developer & Frontend Software Engineer</title>
+
+    <!-- Performance optimizations -->
+    <link rel="preload" href="lib/cv.css" as="style">
+    <link rel="dns-prefetch" href="//github.com">
+    <link rel="dns-prefetch" href="//linkedin.com">
+    <link rel="dns-prefetch" href="//codepen.io">
+    <link rel="dns-prefetch" href="//behance.net">
+
+    <!-- Critical CSS - Above the fold styles -->
+    <style>
+        /* Critical CSS Variables - Light Mode */
+        :root {
+            --color-primary: #0d4d0d;
+            --color-primary-light: #1a661a;
+            --color-text: #000000;
+            --color-text-light: #1a1a1a;
+            --color-text-muted: #2d2d2d;
+            --color-background: #ffffff;
+            --color-background-alt: #f5f5f5;
+            --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-2xl: 1.5rem;
+            --font-size-3xl: 2rem;
+            --line-height-tight: 1.25;
+            --line-height-normal: 1.5;
+            --line-height-relaxed: 1.75;
+            --spacing-xxs: 0.125rem;
+            --spacing-xs: 0.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-xxl: 3rem;
+            --border-radius: 0.375rem;
+            --max-width: 1200px;
+        }
+
+        /* Critical Dark Mode Variables */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-text: #ffffff;
+                --color-text-light: #e6e6e6;
+                --color-text-muted: #cccccc;
+                --color-background: #000000;
+                --color-background-alt: #1a1a1a;
+                --color-primary: #4dff4d;
+                --color-primary-light: #66ff66;
+            }
+        }
+
+        /* Critical Base Styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-normal);
+            color: var(--color-text);
+            background-color: var(--color-background);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Critical Header Styles */
+        header {
+            text-align: center;
+            margin-bottom: var(--spacing-xxl);
+            padding-block: var(--spacing-xl);
+            border-block-end: 2px solid var(--color-primary);
+        }
+
+        header h1 {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            line-height: var(--line-height-tight);
+            margin: 0 0 var(--spacing-sm) 0;
+            color: var(--color-text);
+        }
+
+        header p {
+            font-size: var(--font-size-lg);
+            color: var(--color-text-muted);
+            margin-top: var(--spacing-md);
+            margin-bottom: 0;
+        }
+
+        /* Critical Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--color-primary);
+            color: var(--color-background);
+            padding: var(--spacing-sm);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            z-index: 1000;
+            font-weight: 600;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Critical Navigation */
+        nav {
+            margin-bottom: var(--spacing-xxl);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+            justify-content: center;
+        }
+
+        nav a {
+            color: var(--color-text);
+            text-decoration: none;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius);
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background: var(--color-primary);
+            color: var(--color-background);
+            outline: none;
+        }
+
+        /* Critical Main Container */
+        main {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--spacing-xl) var(--spacing-md);
+        }
+
+
+        /* Critical Responsive */
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                left: 0;
+                padding-left: 50px;
+                padding-right: 0;
+                text-align: left;
+            }
+
+            .timeline-item:nth-child(odd) {
+                left: 0;
+                padding-right: 0;
+                text-align: left;
+            }
+
+            header h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main {
+                padding: var(--spacing-lg) var(--spacing-md);
+            }
+        }
+    </style>
+
+    <!-- Full CSS loaded after critical styles -->
+    <link rel="stylesheet" href="lib/cv.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5TYSX5Y7Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D5TYSX5Y7Y');
+    </script>
+</head>
+
+<body>
+    <!-- Skip link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav role="navigation" aria-label="Career journey navigation">
+        <div>
+            <ul>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#indeed-journey">Indeed Journey</a></li>
+                <li><a href="#leadership">Leadership</a></li>
+                <li><a href="#accessibility">Accessibility</a></li>
+                <li><a href="#future">Future Vision</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main id="main-content" role="main">
+        <!-- Header -->
+        <header>
+            <h1>Human-Centered Technology<br>Design and Development</h1>
+
+            <p>From advertising & marketing to senior frontend software engineering.
+                <br>A career focused on building accessible experiences that serve everyone.
+            </p>
+        </header>
+
+        <!-- Timeline Section -->
+        <section id="timeline">
+            <h2>Career Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline" role="list" aria-label="Career timeline">
+
+                    <!-- Twintails Consulting (Overlapping) -->
+                    <div class="timeline-item overlapping" role="listitem">
+                        <div class="timeline-period">1999-2011</div>
+                        <div class="timeline-title">Twintails Consulting</div>
+                        <div class="timeline-company">Apple Computer Consulting</div>
+                        <div class="timeline-description">
+                            Custom workflow solutions and direct client support. Mac OS X Server Certifications while
+                            building expertise in technology consulting.
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag tools">Apple Consulting</span>
+                            <span class="tag tools-lime">Workflow Solutions</span>
+                            <span class="tag soft-skills">Client Support</span>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="timeline-item" role="listitem">
+                        <div class="timeline-period">2001-2003</div>
+                        <div class="timeline-title">Odessa College</div>
+                        <div class="timeline-company">Associates in Applied Science, Photography</div>
+                        <div class="timeline-description">
+                            Photography and graphic design foundations that would later inform my approach to visual
+                            design and user experience.
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag technical">Photography</span>
+                            <span class="tag tech-coral">Graphic Design</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" role="listitem">
+                        <div class="timeline-period">2003-2005</div>
+                        <div class="timeline-title">The University of Texas of the Permian Basin</div>
+                        <div class="timeline-company">Full Time - Media Specialist & Photographer</div>
+                        <div class="timeline-description">
+                            Univeristy Media department Photographer, Graphic Artist, and Media specialist.
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag soft-skills">Project Management</span>
+                            <span class="tag soft-turquoise">Product and Event Photography</span>
+                            <span class="tag tech-coral">Graphic Design</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" role="listitem">
+                        <div class="timeline-period">2005-2011</div>
+                        <div class="timeline-title">The University of Texas of the Permian Basin</div>
+                        <div class="timeline-company">Bachelor of Arts, Humanities, Minor in Computer Science</div>
+                        <div class="timeline-description">
+                            Attended university classes early mornings and late evenings, part time as afforded by
+                            income, and Full Time employment and consulting work.
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag soft-skills">BA Humanities</span>
+                            <span class="tag soft-turquoise">Communications</span>
+                            <span class="tag technical">Computer Science</span>
+                        </div>
+                    </div>
+
+                    <!-- CVA Advertising -->
+                    <div class="timeline-item" role="listitem">
+                        <div class="timeline-period">2005-2013</div>
+                        <div class="timeline-title">CVA Advertising</div>
+                        <div class="timeline-company">Project Manager, Artist, Web Developer</div>
+                        <div class="timeline-description">
+                            Project management, WordPress development, and custom PHP applications. Built
+                            transformational business card ordering system that sparked my interest in UX and QA
+                            processes.
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag soft-skills">Project Management</span>
+                            <span class="tag tools">WordPress</span>
+                            <span class="tag technical">PHP</span>
+                            <span class="tag soft-blue">UX Research</span>
+                        </div>
+                    </div>
+
+                    <!-- Texas.gov -->
+                    <div class="timeline-item" role="listitem">
+                        <div class="timeline-period">2013-2018</div>
+                        <div class="timeline-title">Texas.gov</div>
+                        <div class="timeline-company">Senior Lead UX & Front End Engineer</div>
+                        <div class="timeline-description">
+                            Built digital services for citizens across Texas. Led development of full CMS web portals
+                            for Texas.gov and Texas Veterans affairs. Established protocols with Security Ops and Texas
+                            DPS, reducing deployment cycles from hours to minutes.
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag primary">Government Services</span>
+                            <span class="tag tools-lime">Agile & Kanban</span>
+                            <span class="tag soft-skills">Lean UX</span>
+                            <span class="tag soft-turquoise">Team Leadership</span>
+                            <span class="tag tech-pink">WCAG AAA</span>
+                        </div>
+                    </div>
+
+                    <!-- Indeed Journey -->
+                    <div class="timeline-item current" role="listitem">
+                        <div class="timeline-period">2018-2019</div>
+                        <div class="timeline-title">Indeed.com</div>
+                        <div class="timeline-company">Design Engineer of Design Technology</div>
+                        <div class="timeline-description">
+                            Frontend engineering and production React development. A/B testing, accessibility mentoring,
+                            and CI/CD pipelines. Improved company-wide internal accessibility with color-blind tested
+                            statistics and pattern+color systems.
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag technical">React</span>
+                            <span class="tag soft-skills">A/B Testing</span>
+                            <span class="tag tech-pink">Accessibility</span>
+                            <span class="tag tools-yellow">CI/CD</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item current" role="listitem">
+                        <div class="timeline-period">2019-2022</div>
+                        <div class="timeline-title">Indeed.com</div>
+                        <div class="timeline-company">UX Developer of Internal Platforms</div>
+                        <div class="timeline-description">
+                            Functional React migration, JSOX compliance delivery, GitLab CI pipelines, and component
+                            libraries. Led TypeScript migration and established IPL Guild for company-wide component
+                            development.
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag technical">TypeScript</span>
+                            <span class="tag tech-coral">Functional React</span>
+                            <span class="tag tools">Component Libraries</span>
+                            <span class="tag tools-lime">GitLab CI</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item current" role="listitem">
+                        <div class="timeline-period">2022-2025</div>
+                        <div class="timeline-title">Indeed.com</div>
+                        <div class="timeline-company">Senior UX Developer (Sr. Frontend SWE)</div>
+                        <div class="timeline-description">
+                            Customer support workflow transformation reducing resolution time by 3-6 minutes.
+                            Architecture planning, module federated web app delivery, Apollo GraphQL, and engineering
+                            platform frontend guidance.
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="tag technical">Module Federation</span>
+                            <span class="tag tools">Apollo GraphQL</span>
+                            <span class="tag soft-skills">Architecture</span>
+                            <span class="tag soft-blue">Engineering Leadership</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Indeed Journey Section -->
+        <section id="indeed-journey" class="highlight">
+            <h2>Indeed Journey: Scaling Impact</h2>
+
+            <h3>Design Engineer of Design Technology (2018-2019)</h3>
+            <p>In this role, our team coordinated with global product teams to implement improvements for internal
+                software, delivering changes for Leadership Objectives and Key Results (OKR) initiatives in a
+                quick-growth-phase environment.</p>
+
+            <p>One of our most impactful projects was improving company-wide internal accessibility of test statistics.
+                We created visual representations of statistics for "at a glance" readouts with a pattern + color
+                pairing to support Positive, Neutral, and Negative measurements across contrasts and vision types.</p>
+
+            <h3>UX Developer of Internal Platforms (2019-2022)</h3>
+            <p>Our team facilitated component adoption through a growth-oriented quick response team. We deployed
+                upgrades and design system adoption, enabling teams with knowledge of design system components for swift
+                development.</p>
+
+            <p>Our team of UX Developers took on ownership of the Internal Tools Component Library (IntCL) for Internal
+                UX initiatives. From early stages of the project we worked with our UX designers to improve upon the
+                existing components. We met with individuals working daily with the internal applications to discuss the
+                changes to the components.
+                From those sessions we prototyped and tested the updated components and worked with teams to adopt the
+                changes through documentation, training, or direct contribution to their codebases.</p>
+
+            <h3>Senior SWE, Frontend (2022-2025)</h3>
+            <p>The next step of my Indeed journey came when our cross-functional team tackled one of our biggest
+                challenges: reducing customer support "Swivel Seat" and tool workflow inefficiencies. Overall leading to
+                reduction in time to resolution metrics by 3-6 minutes while improving CS survey responses.</p>
+
+            <p>As the Lead UX Developer, our team partnered with Design and Research to interview CS Reps and CS
+                management to understand bottlenecks and workflow inefficiencies. We worked to plan changes through
+                Figma and Lean UX Practices and reviewed our approach with other SWEs on the team.</p>
+        </section>
+
+        <!-- Leadership Section -->
+        <section id="leadership">
+            <h2>Leadership & Mentoring: Lifting Others Up</h2>
+            <p>Throughout my career, I've found that the most rewarding aspect of leadership is connecting with others
+                and helping lift one another up. Working through my own challenges and imposter feelings has helped me
+                communicate with others who may be on a similar path.</p>
+
+            <p>One of my proudest moments was helping a colleague transition from QAAE into a SWE role. She was a
+                long-term team member who asked for help with JavaScript and TypeScript training. We discussed her
+                training lessons directly as she worked through her course. We discussed concepts verbally; through this
+                I was able to knowledge share and help analogize the
+                idiosyncrasies of syntax to physical world examples, which helped solidify her understanding.</p>
+
+            <p>The most rewarding part was seeing the smile and pride she had when she passed her assessment and joined
+                the team as a Software Engineer. It's moments like these that remind me why ensemble building, trust,
+                and communication are the most important parts of working with others to tackle challenges.</p>
+        </section>
+
+        <!-- Accessibility Section -->
+        <section id="accessibility" class="highlight">
+            <h2>Accessibility: Building for Everyone</h2>
+            <p>My focus on WCAG accessibility stems from a fundamental belief: differences in physical, visual, auditory
+                abilities and experience (temporary, or otherwise) should never be limiting factors. We can do nearly
+                anything we put our minds to with technology and the skills and patterns therein. I believe we can and
+                should strive to help everyone have access to digital experiences.</p>
+
+            <p>The pattern+color system I built for statistical measurements in an internal application exemplifies this
+                philosophy. Used throughout Indeed by executives, managers, and employees, this system helped the
+                visually impaired and colorblind understand data at a glance. It also improved accessibility for
+                everyone viewing presentations on low contrast or uncalibrated displays in conference rooms where colors
+                might be "washed out"
+                on projectors or TV monitors.</p>
+
+            <p>Adding the patterns created a visual "texture" experience so it could be understood through multiple
+                perception points and therefore have more cognitive clarity in representation.</p>
+        </section>
+
+        <!-- Future Vision Section -->
+        <section id="future">
+            <h2>The Future: Human-AI Collaboration</h2>
+            <p>Looking ahead, I hope to continue my journey in leading and developing meaningful human-computer
+                interactions. I'm especially excited about working with robotics and AI-adjacent technologies to improve
+                how we will all interact with technology in the future.</p>
+
+            <p>I want to help build a better future where humans can have a platinum age of creative flow, and work with
+                quality AI to assist in goals and missions. I hope to see our humanity evolve away from "mastering
+                robotics
+                and AI" to growing as a race that can work together with technological intelligences; continuing to
+                reach distances across star systems and beyond.</p>
+
+            <p>Like a sculptor can carve with a chisel as well as a surgeon can operate with a scalpel, it takes
+                practice and understanding the tool to use it effectively. I approach working with AI as Generative
+                Design, or as code assistants through practice and measured approaches. It's like working with a
+                chisel or a carving knife; how you practice, understand nuance, and work with a tool will help
+                determine and improve the outcomes.</p>
+        </section>
+
+        <!-- Key Learnings -->
+        <section>
+            <h2>Key Learnings</h2>
+            <p>Over the years, I've found that the most important thing is to understand the problem you're trying to
+                solve. Work with a great and reliable team of mindful people, and leverage the tools you have at your
+                disposal. When you build trust and ensemble, when you measure scientifically your hypothesis in design
+                and development, you can achieve great results to propel the human race forward. We don't need blame
+                culture in our industry. We need to solve for issues and deliver measured improvements/results.</p>
+
+            <p>The journey from marketing to senior frontend engineering has taught me that technology is at its best
+                when humanity learns to wield it well, and for the good. Whether it's making government services more
+                accessible, improving customer support workflows, or mentoring the next generation of developers, the
+                goal remains the same: <span class="callout">Build experiences that improve lives, and work for
+                    everyone.</span></p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>There is power in teams with ensemble working together to solve meaningful problems.</p>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://github.com/Twintails" aria-label="GitHub Profile" class="social-link github">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                <span>GitHub</span>
+            </a>
+
+            <a href="https://linkedin.com/in/lfrancell" aria-label="LinkedIn Profile" class="social-link linkedin">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="https://codepen.io/twintails" aria-label="CodePen Profile" class="social-link codepen">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M18.144 13.067v-2.134L16.55 12zm1.276 1.194a.628.628 0 01-.006.083l-.005.028-.011.053-.01.031c-.005.016-.01.031-.017.047l-.014.03a.78.78 0 01-.021.043l-.019.03a.57.57 0 01-.08.1l-.026.025a.602.602 0 01-.036.03l-.029.022-.01.008-6.782 4.522a.637.637 0 01-.708 0L4.864 14.79l-.01-.008a.599.599 0 01-.065-.052l-.026-.025-.032-.034-.021-.028a.588.588 0 01-.067-.11l-.014-.031a.644.644 0 01-.017-.047l-.01-.03c-.004-.018-.008-.036-.01-.054l-.006-.028a.628.628 0 01-.006-.083V9.739c0-.028.002-.055.006-.083l.005-.027.011-.054.01-.03a.574.574 0 01.12-.217l.031-.034.026-.025a.62.62 0 01.065-.052l.01-.008 6.782-4.521a.638.638 0 01.708 0l6.782 4.521.01.008.03.022.035.03c.01.008.017.016.026.025a.545.545 0 01.08.1l.019.03a.633.633 0 01.021.043l.014.03c.007.016.012.032.017.047l.01.031c.004.018.008.036.01.054l.006.027a.619.619 0 01.006.083zM12 0C5.373 0 0 5.372 0 12 0 18.627 5.373 24 12 24c6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12m0 10.492L9.745 12 12 13.51 14.255 12zm.638 4.124v2.975l4.996-3.33-2.232-1.493zm-6.272-.356l4.996 3.33v-2.974l-2.764-1.849zm11.268-4.52l-4.996-3.33v2.974l2.764 1.85zm-6.272-.356V6.41L6.366 9.74l2.232 1.493zm-5.506 1.549v2.134L7.45 12Z" />
+                </svg>
+                <span>CodePen</span>
+            </a>
+
+            <a href="https://behance.net/twintails" aria-label="Behance Profile" class="social-link behance">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M16.969 16.927a2.561 2.561 0 0 0 1.901.677 2.501 2.501 0 0 0 1.531-.475c.362-.235.636-.584.779-.99h2.585a5.091 5.091 0 0 1-1.9 2.896 5.292 5.292 0 0 1-3.091.88 5.839 5.839 0 0 1-2.284-.433 4.871 4.871 0 0 1-1.723-1.211 5.657 5.657 0 0 1-1.08-1.874 7.057 7.057 0 0 1-.383-2.393c-.005-.8.129-1.595.396-2.349a5.313 5.313 0 0 1 5.088-3.604 4.87 4.87 0 0 1 2.376.563c.661.362 1.231.87 1.668 1.485a6.2 6.2 0 0 1 .943 2.133c.194.821.263 1.666.205 2.508h-7.699c-.063.79.184 1.574.688 2.187ZM6.947 4.084a8.065 8.065 0 0 1 1.928.198 4.29 4.29 0 0 1 1.49.638c.418.303.748.711.958 1.182.241.579.357 1.203.341 1.83a3.506 3.506 0 0 1-.506 1.961 3.726 3.726 0 0 1-1.503 1.287 3.588 3.588 0 0 1 2.027 1.437c.464.747.697 1.615.67 2.494a4.593 4.593 0 0 1-.423 2.032 3.945 3.945 0 0 1-1.163 1.413 5.114 5.114 0 0 1-1.683.807 7.135 7.135 0 0 1-1.928.259H0V4.084h6.947Zm-.235 12.9c.308.004.616-.029.916-.099a2.18 2.18 0 0 0 .766-.332c.228-.158.411-.371.534-.619.142-.317.208-.663.191-1.009a2.08 2.08 0 0 0-.642-1.715 2.618 2.618 0 0 0-1.696-.505h-3.54v4.279h3.471Zm13.635-5.967a2.13 2.13 0 0 0-1.654-.619 2.336 2.336 0 0 0-1.163.259 2.474 2.474 0 0 0-.738.62 2.359 2.359 0 0 0-.396.792c-.074.239-.12.485-.137.734h4.769a3.239 3.239 0 0 0-.679-1.785l-.002-.001Zm-13.813-.648a2.254 2.254 0 0 0 1.423-.433c.399-.355.607-.88.56-1.413a1.916 1.916 0 0 0-.178-.891 1.298 1.298 0 0 0-.495-.533 1.851 1.851 0 0 0-.711-.274 3.966 3.966 0 0 0-.835-.073H3.241v3.631h3.293v-.014ZM21.62 5.122h-5.976v1.527h5.976V5.122Z" />
+                </svg>
+                <span>Behance</span>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Minimal JavaScript for enhanced interactions -->
+    <script>
+        // Progressive enhancement: Timeline item highlighting on scroll
+        (function () {
+            'use strict';
+
+            // Only run if Intersection Observer is supported
+            if (!('IntersectionObserver' in window)) {
+                return;
+            }
+
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            // Initialize timeline items with subtle animation
+            timelineItems.forEach((item, index) => {
+                item.style.opacity = '0.7';
+                item.style.transform = 'translateX(-20px)';
+                item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                observer.observe(item);
+            });
+
+            // Smooth scroll for navigation links
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+        })();
+    </script>
+
+</body>
+
+</html>
